@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Home, Login, Register, Dashboard } from "./pages";
+import { Home, Login, Dashboard } from "./pages";
 import { ProtectedRoute, PublicRoute } from "./routes";
 
 function App() {
@@ -15,14 +15,7 @@ function App() {
           </PublicRoute>
         }
       />
-      <Route
-        path="/register"
-        element={
-          <PublicRoute>
-            <Register />
-          </PublicRoute>
-        }
-      />
+      
       <Route
         path="/dashboard"
         element={
